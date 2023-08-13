@@ -253,7 +253,7 @@ var _hmt = _hmt || [];
 <article class="post-single">
     <div id="single-content">
         <header class="post-header">
-            <div class="breadcrumbs"><a href="https://yccyangchen.github.io/">🏠 主页</a>&nbsp;»&nbsp;<a href="https://yccyangchen.github.io/posts/">📚Articles</a>&nbsp;»&nbsp;<a href="https://yccyangchen.github.io/posts/tech/">👩‍💻 tech</a></div>
+            <div class="breadcrumbs"><a href="https://yccyangchen.github.io/">🏠 Home</a>&nbsp;»&nbsp;<a href="https://yccyangchen.github.io/posts/">📚Articles</a>&nbsp;»&nbsp;<a href="https://yccyangchen.github.io/posts/tech/">👩‍💻 tech</a></div>
             <h1 class="post-title">
                 Tech
             </h1>
@@ -411,26 +411,16 @@ var _hmt = _hmt || [];
                 <div id="QR" style="opacity: 0;">
                     <div id="wechat" style="display: inline-block">
                         <a class="fancybox" rel="group">
-                            <img id="wechat_qr" src="https://yccyangchen.github.io/img/wechat_pay.png" alt="wechat_pay"></a>
+                            <img id="wechat_qr" src="https://yccyangchen.github.io/" alt="wechat_pay"></a>
                         <p>Wechat</p>
                     </div>
                     <div id="alipay" style="display: inline-block">
                         <a class="fancybox" rel="group">
-                            <img id="alipay_qr" src="https://yccyangchen.github.io/img/alipay.png" alt="alipay"></a>
+                            <img id="alipay_qr" src="https://yccyangchen.github.io/" alt="alipay"></a>
                         <p>Alipay</p>
                     </div>
                 </div>
-                <button id="rewardButton"
-                        onclick="
-                    var qr = document.getElementById('QR');
-                    if (qr.style.opacity === '0') {
-                        qr.style.opacity='1';
-                    } else {
-                        qr.style.opacity='0'
-                    }"
-                >
-                    <span>🧧 Encouragement</span>
-                </button>
+                
             </div>
         </div>
 
@@ -438,7 +428,7 @@ var _hmt = _hmt || [];
             
 <nav class="paginav">
   <a class="prev" href="https://yccyangchen.github.io/posts/read/read/">
-    <span class="title">« 上一页</span>
+    <span class="title">« Prev Page</span>
     <br>
     <span>Read</span>
   </a>
@@ -489,16 +479,16 @@ var _hmt = _hmt || [];
     <span>
         Copyright
         &copy;
-        2020-2023
+        -2023
         <a href="https://yccyangchen.github.io/" style="color:#939393;">Chen&#39;s Blog</a>
         All Rights Reserved
     </span>
-    <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#939393;">填写自己的备案号</a>&nbsp;
+    <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#939393;"></a>&nbsp;
     <span>
         <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=null"
            style="display:inline-block;text-decoration:none;height:20px;color:#939393;">
-            <img src="%e5%a1%ab%e8%87%aa%e5%b7%b1%e7%9a%84%e5%85%ac%e5%ae%89%e5%9b%be%e6%a0%87%e9%93%be%e6%8e%a5" style="float:left;margin: 0px 5px 0px 0px;"/>
-            填自己的公网安备
+            <img src="" style="float:left;margin: 0px 5px 0px 0px;"/>
+            
         </a>
     </span>
     <span id="busuanzi_container">
@@ -606,12 +596,12 @@ var _hmt = _hmt || [];
         const container = codeblock.parentNode.parentNode;
         const copybutton = document.createElement('button');
         copybutton.classList.add('copy-code');
-        copybutton.innerText = '📄复制';
+        copybutton.innerText = '📄copy';
 
         function copyingDone() {
-            copybutton.innerText = '👌🏻已复制!';
+            copybutton.innerText = '👌🏻copied!';
             setTimeout(() => {
-                copybutton.innerText = '📄复制';
+                copybutton.innerText = '📄copy';
             }, 2000);
         }
 
