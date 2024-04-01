@@ -253,7 +253,7 @@ var _hmt = _hmt || [];
 <article class="post-single">
     <div id="single-content">
         <header class="post-header">
-            <div class="breadcrumbs"><a href="https://yccyangchen.github.io/">🏠 主页</a>&nbsp;»&nbsp;<a href="https://yccyangchen.github.io/posts/">📚Articles</a>&nbsp;»&nbsp;<a href="https://yccyangchen.github.io/posts/tech/">👩‍💻 tech</a></div>
+            <div class="breadcrumbs"><a href="https://yccyangchen.github.io/">🏠 Home</a>&nbsp;»&nbsp;<a href="https://yccyangchen.github.io/posts/">📚Articles</a>&nbsp;»&nbsp;<a href="https://yccyangchen.github.io/posts/tech/">👩‍💻 tech</a></div>
             <h1 class="post-title">
                 Tech
             </h1>
@@ -292,13 +292,13 @@ var _hmt = _hmt || [];
     
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
-        <span>210字
+        <span>210 Words
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_4">
         <span class="fa fa-clock-o"></span>
-        <span>1分钟
+        <span>1 Minutes
             &nbsp;&nbsp;
         </span>
     </span>
@@ -311,7 +311,7 @@ var _hmt = _hmt || [];
     <span id="post_meta_style_6">
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>
-            <span class="post-tags-meta">
+            <span class="post-tags-meta">  
                 <a href="https://yccyangchen.github.io/tags/tech/" style="color: var(--secondary)!important;">tech</a>
             </span>
         </span>
@@ -329,7 +329,7 @@ var _hmt = _hmt || [];
                     <span id="post_meta_style_8">
                         <span class="fa fa-commenting-o"></span>
                         <span>
-                            <script src="https://cdn.staticfile.org/twikoo/1.5.8/twikoo.all.min.js"></script>
+                            <script src="https://cdn.staticfile.org/twikoo/1.6.17/twikoo.all.min.js"></script>
                             <script>
                                 let url = document.documentURI
                                 
@@ -340,8 +340,8 @@ var _hmt = _hmt || [];
                                     finalUrl = '/'+finalUrl
                                 }
                                 twikoo.getCommentsCount({
-                                    envId:  null , 
-                                region:  null , 
+                                    envId: "https://twikoo-api-green-one.vercel.app/", 
+                                region: "none", 
                                 urls: [ 
                                     
                                     finalUrl,
@@ -411,26 +411,16 @@ var _hmt = _hmt || [];
                 <div id="QR" style="opacity: 0;">
                     <div id="wechat" style="display: inline-block">
                         <a class="fancybox" rel="group">
-                            <img id="wechat_qr" src="https://yccyangchen.github.io/img/wechat_pay.png" alt="wechat_pay"></a>
-                        <p>微信</p>
+                            <img id="wechat_qr" src="https://yccyangchen.github.io/" alt="wechat_pay"></a>
+                        <p>Wechat</p>
                     </div>
                     <div id="alipay" style="display: inline-block">
                         <a class="fancybox" rel="group">
-                            <img id="alipay_qr" src="https://yccyangchen.github.io/img/alipay.png" alt="alipay"></a>
-                        <p>支付宝</p>
+                            <img id="alipay_qr" src="https://yccyangchen.github.io/" alt="alipay"></a>
+                        <p>Alipay</p>
                     </div>
                 </div>
-                <button id="rewardButton"
-                        onclick="
-                    var qr = document.getElementById('QR');
-                    if (qr.style.opacity === '0') {
-                        qr.style.opacity='1';
-                    } else {
-                        qr.style.opacity='0'
-                    }"
-                >
-                    <span>🧧 鼓励</span>
-                </button>
+                
             </div>
         </div>
 
@@ -438,7 +428,7 @@ var _hmt = _hmt || [];
             
 <nav class="paginav">
   <a class="prev" href="https://yccyangchen.github.io/posts/read/read/">
-    <span class="title">« 上一页</span>
+    <span class="title">« Prev Page</span>
     <br>
     <span>Read</span>
   </a>
@@ -450,12 +440,12 @@ var _hmt = _hmt || [];
 <style>
     .comments_details summary::marker {
         font-size: 20px;
-        content: '👉展开评论';
+        content: '👉Show comment';
         color: var(--content);
     }
     .comments_details[open] summary::marker{
         font-size: 20px;
-        content: '👇关闭评论';
+        content: '👇Close comment';
         color: var(--content);
     }
 </style>
@@ -468,14 +458,16 @@ var _hmt = _hmt || [];
         </summary>
         <div id="tcomment"></div>
     </details>
-    <script src="https://cdn.staticfile.org/twikoo/1.5.8/twikoo.all.min.js">
+    <script src="https://cdn.staticfile.org/twikoo/1.6.17/twikoo.all.min.js">
     </script>
     <script>
         twikoo.init({
-            envId:  null ,
+             envId: "https://twikoo-api-green-one.vercel.app/",
+            
+            
         el: "#tcomment",
-            lang: 'zh-CN',
-            region:  null ,
+            lang: 'en',
+            region: "none",
         path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
         })
     </script>
@@ -487,16 +479,16 @@ var _hmt = _hmt || [];
     <span>
         Copyright
         &copy;
-        2020-2023
+        -2023
         <a href="https://yccyangchen.github.io/" style="color:#939393;">Chen&#39;s Blog</a>
         All Rights Reserved
     </span>
-    <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#939393;">填写自己的备案号</a>&nbsp;
+    <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#939393;"></a>&nbsp;
     <span>
         <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=null"
            style="display:inline-block;text-decoration:none;height:20px;color:#939393;">
-            <img src="%e5%a1%ab%e8%87%aa%e5%b7%b1%e7%9a%84%e5%85%ac%e5%ae%89%e5%9b%be%e6%a0%87%e9%93%be%e6%8e%a5" style="float:left;margin: 0px 5px 0px 0px;"/>
-            填自己的公网安备
+            <img src="" style="float:left;margin: 0px 5px 0px 0px;"/>
+            
         </a>
     </span>
     <span id="busuanzi_container">
@@ -604,12 +596,12 @@ var _hmt = _hmt || [];
         const container = codeblock.parentNode.parentNode;
         const copybutton = document.createElement('button');
         copybutton.classList.add('copy-code');
-        copybutton.innerText = '📄复制';
+        copybutton.innerText = '📄copy';
 
         function copyingDone() {
-            copybutton.innerText = '👌🏻已复制!';
+            copybutton.innerText = '👌🏻copied!';
             setTimeout(() => {
-                copybutton.innerText = '📄复制';
+                copybutton.innerText = '📄copy';
             }, 2000);
         }
 
